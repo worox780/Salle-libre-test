@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Salles libres</title>
+</head>
+<body>
+    <div class="container_nav_bar">
+        <div class="nav_bar">
+            <div class="lien1 lienclicable"><a href= "#lien1">Salles libres</a></div>
+            <div class="lien2 lienclicable"><a href= "#lien2">Prochaine heure</a></div>
+            <div class="lien3 lienclicable"><a href= "#lien3">Rechercher</a></div>
+        </div>
+    </div>
+
+    
+    <div class = "enormetitre">
+        <h1>Salles libres</h1>
+    </div>
+
+
+    <div class="conteneneurglobal">
+        <div class = "container contenulol">
+            <div class="contenu">
+
+                <div class = "maintenant content" id = "lien1">
+                    <div class = titre>
+                        <h2>Maintenant</h2>
+                    </div>
+                </div>
+
+                <div id = "contenu_maintenant" class = "listesalle">
+
+                </div>
+            </div>
+
+            <div class="contenu">
+
+                <div class = "prochaine_heure content" id="lien2">
+                    <div class = "titre">
+                        <h2>Prochaine heure</h2>
+                    </div>
+                </div>
+            
+                <div id = "contenu_prochaineheure" class="listesalle">
+
+                </div>
+            </div>
+                    
+            <div class="contenu research">
+                        
+                <div id = "rechercher" class = "content">
+                    <div class = "titre" id="lien3">
+                        <h2>Rechercher</h2>
+                    </div>
+                </div>
+
+                <div id = "selecteur_de_truc" class ="container2 researchcontent">
+                    <div id = "flechegauche" class="fleche">
+                        <img src="images/fleche_gauche.png" class = "button" id="gauche">
+                    </div>
+                    <div id = "containerresearch" class="containerresearch">
+                        <div id = "user_research" class="slider">
+                            <div class="researchtitle" id ="researchtitle">Planning d'une salle</div>
+                        </div>
+                    </div>
+
+                    <div id = "flechedroite" class = "fleche">
+                        <img src="images/fleche_droite.png" class="button" id="droite">
+                    </div>
+
+                            
+                </div>
+                <div class="conteneurducontenu" id="conteneurducontenu">
+                    <div class="content_research" id="content_research">
+                        <div class = "contenudelarecherche" id="contenudelarecherche"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="information_supplemantaire" class="elementBlanc">
+            <button id="close_information_compost" class="close">X</button>
+            <div class="information_supplemantaire">
+                <!-- Div gauche -->
+                <div class="left">
+                    <div class="img-top" id="img_salle">
+                        <img src="images/grosses_images/gf11.jpg" alt="Image centrée" class="image-left">
+                    </div>
+                    <div class="top">
+                        <div class="text1" id="information_salle_gauche">
+                            <div>
+                                <h2>Note</h2>
+                                <br>
+                                <p>20/20</p>
+                            </div>
+                            <div>
+                                <h2>Disponibilité</h2>
+                                <br>
+                                <p>25min</p>
+                            </div>
+                            <div>
+                                <h2>Information trafique</h2>
+                                <br>
+                                <p>Bondé</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Div droite -->
+                <div class="right">
+                    <div class="top" id="description_salle">
+                        <div class="text1">
+                            <h2>Déscription de la salle</h2>
+                            <br>
+                            <p>Salle grande</p>
+                        </div>
+                        <div class="text2">
+                            <h2>Déscription de l'ambiance</h2>
+                            <br>
+                            <p>Salle cool</p>
+                        </div>
+                    </div>
+                    <div class="bottom" id="emploi-temps-salle-more">
+                        <img src="image-bottom.jpg" alt="Image en bas" class="image-bottom">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+
+/*----------------------------------------------gérer l'organisation générale de la page------------------------*/
+html {
+    scroll-behavior: smooth;
+   }
+  
+
+
+body{
+    margin : auto;
+    height : 100%;
+    background-color: #E7E8ED;
+    font-family : "Saira", Arial, Helvetica, sans-serif;
+}
+
+.enormetitre{
+    text-align: center;
+    z-index :5;
+}
+
+.container {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom : 30px;
+}
+
+h2{
+    margin : 0;
+    text-align: center;
+}
+
+.contenu {
+    width : 30%;
+    min-width: 300px;
+    height : 80%;
+    max-height: 600px;
+    min-height: 550px;
+    overflow-x :hidden;
+    overflow-y: scroll;
+}
+
+.content{
+    width : 30%;
+    min-width: 300px;
+    margin:auto;
+    margin-bottom : 10px;
+    margin-top : 10px;
+}
+
+
+/* -------------------------------------------------Gerer l'animation de slide du caroussel---------------------------------*/
+
+
+.button{
+    width : 25px;
+    height : 25px;
+    cursor : pointer;
+    opacity : 0.7;
+    transition : all 0.3s ease;
+}
+.button:hover{
+    transform:scale(1.1);
+    opacity:1;
+    transition : all 0.3s ease;
+}
+
+.titre{
+    display : flex;
+    height : 50px;
+    vertical-align: middle;
+    justify-content :center;
+    align-items : center;
+    text-align: center;
+    background: #E7E8ED;
+    box-shadow: inset 20px 20px 60px #c4c5c9,
+                inset -20px -20px 60px #ffffff;
+    border-radius : 10px;
+    z-index :4;
+    width : 90%
+}
+
+
+
+.slider{
+    width : 100%;
+    display : inline-block;
+    position :relative;
+}
+
+.containerresearch{
+    width: 50%;
+    overflow : hidden;
+    position :relative;
+    padding : auto;
+}
+
+.researchtitle{
+    display : inline-block;
+    align-items : center;
+    text-align: center;
+    position: relative;
+    width : 100%;
+    font-size : 1.3em;
+}
+
+.userresearch{
+    width: 50%;
+    height : 100%;
+}
+
+.container2 {    
+    display:flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom : 20px;
+}
+
+
+/*contenu de la recherche*/
+
+.content_research{
+    position : absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.conteneurducontenu{
+    position:relative;
+    height: 430px;
+    width : 100%;
+    overflow: hidden;
+}
+
+
+.contenudelarecherche{
+    width : 100%;
+    height: 100%;
+    position: absolute;
+    margin : 10px;
+}
+
+
+
+
+/* --------------------------------------gérer les cartes des salles--------------------------------------- */
+
+.SalleModel{
+    background-color: white;
+    padding : 10px 10px 10px 10px;
+    margin : 0px 10px 10px 10px;
+    border-radius: 5px;
+    position : relative;
+    height: 100px;
+}
+
+.SalleModel_image_container{
+    position:absolute;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.SalleModel_image{
+    position :relative;
+    object-fit: cover;
+}
+
+.SalleModel_titre{
+    position:absolute;
+}
+
+.SalleModel_description{
+    position:absolute;
+}
+
+
+/*------------------------------------------créer les styles des différentes barres de défilement------------------------------------*/
+
+/* fonctionne sur Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #A1A5B9 #E7E8ED;
+}
+  
+  /* fonctionne sur Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: #E7E8ED;
+}
+
+  
+*::-webkit-scrollbar-thumb {
+    background-color:#A1A5B9;
+    border-radius: 20px;
+    border: 3px solid #A1A6B9;
+}
+
+
+/*--------------------------------------Style pour le selecteur d'heures et pour tous les trucs de recherche------------------------------*/
+
+
+
+.container_input_heure{
+    margin-bottom : 10px;
+    width : 100%;
+}
+
+.titre_heure_de_cours, .titre_date_recherche, .titre_nom_de_la_salle, .etages_titre{
+    font-size: 1.2em;
+}
+
+
+.selecteur{
+    margin-left: 10px;
+    background-color: rgba(0,0,0,0);
+    border : rgba(0,0,0,0);
+    color : #5c5e5f;
+}
+
+.form-control{
+    background-color: rgba(0,0,0,0);
+    border : rgba(0,0,0,0);
+    color : #5c5e5f;
+    margin-left : 10px;
+}
+
+.container_nom_salle{
+    margin-bottom : 10px;
+}
+
+.container_date_salle{
+    margin-bottom : 10px;
+}
+
+.container_button{
+    width : 100%;
+}
+
+.button_research{
+    background-color:#000092;
+    color : #F0F0F0;
+    width : 80%;
+    margin-left : 7%;
+    height: 50px;
+    border-radius: 50px;
+    cursor : pointer;
+    opacity : 0.9;
+    transition : all 0.3s ease;
+    border : rgba(0,0,0,0)
+}
+
+.button_research:hover{
+    transform:scale(1.05);
+    opacity:1;
+    transition : all 0.3s ease;
+}
+
+.container_planning_salle, .container_salles_temps_precis{
+    width : 90%;
+    margin-top: 10px;
+    height: 260px;
+    overflow-y : scroll;
+    overflow-x: hidden;
+}
+
+.container_salles_fonction_etage{
+    width : 90%;
+    margin-top: 10px;
+    height: 200px;
+    overflow-y : scroll;
+}
+
+.container_planning{
+    display:flex;
+    height : 30px;
+    width : 100%;
+    margin-bottom: 10px;
+}
+
+.horaire{
+    width : 20%;
+    height : 100%;
+    text-align: center;
+}
+
+.vert{
+    width : 80%;
+    height : 100%;
+    background-color: green;
+}
+
+.rouge{
+    width : 80%;
+    height: 100%;
+    background-color: red;
+}
+
+.container_nav_bar{
+    position : fixed;
+    top : 0px;
+    display: none;
+    background-color: #000092;
+    width : 100%;
+    height : 40px;
+}
+
+.nav_bar{
+    width : 100%;
+    height: 40px;
+    align-items: center;
+    display : flex;
+    justify-content: space-around;
+}
+
+.lienclicable{
+    transition : all 0.3s ease;
+}
+.lienclicable:hover{
+    transition : all 0.3s ease;
+    transform:scale(1.05);
+}
+
+a{
+    font-size: 1.2em;
+    font-weight: bold;
+    color : #E7E8ED;
+    transition : all 0.3s ease;
+    text-decoration: none;
+}
+
+a:hover{
+    color : white;
+    transition : all 0.3s ease;
+}
+
+@media screen and (max-width : 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container_nav_bar{
+        display : flex;
+        z-index: 1;
+    }
+    .enormetitre{
+        margin-top: 50px;
+    }
+    .contenu {
+        width : 90%;
+    }
+    .left {
+        width: 100%;            /* Prend 50% de la largeur de la page */
+        display: flex;
+        flex-direction: column;      /* Centre l'image verticalement */
+    }
+    .right {
+        width: 100%;              /* Prend 50% de la largeur de la page */
+        display: flex;
+        flex-direction: column;  /* Empile les éléments verticalement */
+    }
+    .information_supplemantaire {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width : 1000px) {
+    .left {
+        width: 50%;            /* Prend 50% de la largeur de la page */
+        display: flex;
+        flex-direction: column;      /* Centre l'image verticalement */
+    }
+    .right {
+        width: 50%;              /* Prend 50% de la largeur de la page */
+        display: flex;
+        flex-direction: column;  /* Empile les éléments verticalement */
+    }
+}
+
+.elementBlanc {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid black;
+    position: fixed; /* Positionnement fixe pour qu'il reste à la même place dans la fenêtre */
+    top: 0%;       /* Positionné à 20px du haut de la fenêtre */
+    left: 0%;      /* Positionné à 20px de la gauche de la fenêtre */
+    z-index: 10;     /* S'assure que l'élément est au-dessus de tout autre contenu */
+}
+
+.img-top {
+    height: 50%;            /* Prend 50% de la largeur de la page */
+    display: flex;
+    justify-content: center;  /* Centre l'image horizontalement */
+    align-items: center;
+}
+
+.left .image-left {
+    max-width: 100%;   /* L'image prend toute la largeur de la div sans déborder */
+    max-height: 100%;  /* L'image prend toute la hauteur de la div sans déborder */
+}
+
+/* Div droite */
+
+
+/* Partie du haut (deux div avec du texte collées l'une à côté de l'autre) */
+.top {
+    display: flex;           /* Les divs sont côte à côte */
+    justify-content: space-between; /* Laisse de l'espace entre les deux divs */
+    flex: 1;                  /* Occupe la moitié de la hauteur de la div droite */
+}
+/*part-bottom-left*/
+.text1, .text2 {
+    flex: 1;                  /* Chaque texte occupe une part égale de l'espace horizontal */
+    padding: 10px;
+    background-color: lightgray; /* Optionnel, pour mieux visualiser */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Partie du bas (image) */
+.bottom {
+    height: 50%;              /* Occupe la moitié restante de la div droite */
+    display: flex;
+    justify-content: center;  /* Centre l'image horizontalement */
+    align-items: center;      /* Centre l'image verticalement */
+    background-color: lightblue; /* Optionnel, pour mieux visualiser */
+}
+
+.bottom .image-bottom {
+    max-width: 100%;  /* L'image prend toute la largeur de la div sans déborder */
+    max-height: 100%; /* L'image prend toute la hauteur de la div sans déborder */
+}
+
+.information_supplemantaire {
+    display: flex;
+    height: 100vh;  /* Hauteur de l'écran pour une disposition complète */
+    overflow-y: scroll;
+}
